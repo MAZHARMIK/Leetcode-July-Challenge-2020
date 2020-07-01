@@ -13,7 +13,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 		<tbody>
 			<tr>
 			  <td>Arranging Coins</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Arranging%20Coins%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/coinArrangements.png" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Arranging%20Coins%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/coinArrangements.png" width="600" height="250"></a></td>
 			</tr>
 		</tbody>
 </table>
