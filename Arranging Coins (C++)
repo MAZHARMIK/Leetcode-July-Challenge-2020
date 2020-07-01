@@ -1,3 +1,5 @@
+Approach:1
+
 class Solution {
 public:
     int arrangeCoins(int n) {
@@ -11,6 +13,23 @@ public:
                 result++;
             else
                 break;
+        }
+        return result;
+    }
+};
+
+---------------------------------------------------------------------------------
+Approach:1
+class Solution {
+public:
+    int arrangeCoins(int n) {
+        if(n == 1 || n == 0)
+            return n;
+        int rowCoinNo = 1, result = 0;
+        while(n >= rowCoinNo){
+            n = n-rowCoinNo;
+            rowCoinNo++;
+            result++;
         }
         return result;
     }
