@@ -1,0 +1,39 @@
+//Accepted	12 ms,	12.6 MB
+
+class Solution {
+public:
+    void collectTraversal(TreeNode* root, vector<vector<int>>& result, int h){
+        queue<TreeNode*> que;
+        que.push(root);
+        int n;
+        TreeNode* curr;
+        while(!que.empty()){
+            n = que.size();
+            while(n--){
+                curr = que.front();
+                que.pop();
+                if(curr->left)
+                    que.push(curr->left);
+                if(curr->right)
+                    que.push(curr->right);
+                result[h].push_back(curr->val);
+            }
+            h--;
+        }
+    }
+
+    int getHeight(TreeNode* root){
+        if(root == NULL)
+            return 0;
+
+        return 1 + max(getHeight(root->left), getHeight(root->right));
+    }
+    vector<vector<int>> levelOrderBottom(TreeNode* root) {
+        if(root == NULL)
+            return {};
+        int h = getHeight(root);
+	    vector<vector<int>> result(h, vector<int>());
+        collectTraversal(root, result, h-1);
+        return result;
+    }
+};
