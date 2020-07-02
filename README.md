@@ -17,7 +17,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Binary Tree Level Order Traversal II</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Binary%20Tree%20Level%20Order%20Traversal%20II%20(C%2B%2B)"><img src="http://www.algotutor.com/wp-content/uploads/2015/06/Level-Order-Traversal.png" width="600" height="250"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Binary%20Tree%20Level%20Order%20Traversal%20II%20(C%2B%2B)"><img src="http://www.algotutor.com/wp-content/uploads/2015/06/Level-Order-Traversal.png" width="400" height="150"></a></td>
 			</tr>
 		</tbody>
 </table>
