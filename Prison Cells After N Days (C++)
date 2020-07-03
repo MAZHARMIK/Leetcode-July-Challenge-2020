@@ -1,0 +1,42 @@
+class Solution {
+public:
+    vector<int> getNextDay(vector<int>& cells) {
+        vector<int> temp(8, 0);
+        for(int i = 1; i<=6 ; i++){
+            if(cells[i-1] == cells[i+1])
+                temp[i] = 1;
+        }
+        return temp;
+    }
+    vector<int> prisonAfterNDays(vector<int>& cells, int N) {
+        set<string> st;
+
+        std::ostringstream oss;
+        int cycle = 0;
+        bool found = false;
+        vector<int> arr;
+        string temp;
+        for(int i = 0; i<N; i++){
+            arr = getNextDay(cells);
+            std::ostringstream oss;
+            copy(arr.begin(), arr.end(), ostream_iterator<int>(oss, ","));
+            temp = oss.str();
+            oss << arr.back();
+            if(st.find(temp) == st.end()){
+                st.insert(temp);
+                cycle++;
+            } else {
+                found = true;
+                break;
+            }
+            cells = arr;
+        }
+        if(found){
+            N = N%cycle;
+            for(int i = 0; i<N; i++){
+                cells = getNextDay(cells);
+            }
+        }
+        return cells;
+    }
+};
