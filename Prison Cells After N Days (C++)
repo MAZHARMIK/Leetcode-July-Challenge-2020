@@ -15,13 +15,9 @@ public:
         int cycle = 0;
         bool found = false;
         vector<int> arr;
-        string temp;
         for(int i = 0; i<N; i++){
             arr = getNextDay(cells);
-            std::ostringstream oss;
-            copy(arr.begin(), arr.end(), ostream_iterator<int>(oss, ","));
-            temp = oss.str();
-            oss << arr.back();
+            string temp(arr.begin(), arr.end());
             if(st.find(temp) == st.end()){
                 st.insert(temp);
                 cycle++;
