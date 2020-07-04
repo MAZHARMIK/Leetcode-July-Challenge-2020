@@ -1,0 +1,32 @@
+typedef long long ll;
+class Solution {
+public:
+    ll getUgly(ll n) {
+        ll vec[n];
+        ll m2 = 2, m3 = 3, m5 = 5, next = 1;
+        ll i2 = 0, i3 = 0, i5 = 0;
+        vec[0] = 1;
+        for (int i=1; i<n; i++) {
+            next = min(m2, min(m3,m5));
+            vec[i] = next;
+            if (next == m2){
+                i2 = i2+1;
+                m2 = vec[i2]*2;
+            }
+            if (next == m3){
+                i3 = i3+1;
+                m3 = vec[i3]*3;
+            }
+            if (next == m5) {
+                i5 = i5+1;
+                m5 = vec[i5]*5;
+            }
+        }
+        return next;
+    }
+    int nthUglyNumber(int n) {
+        if(n == 1 || n == 2 || n == 3)
+            return n;
+        return getUgly(n);
+    }
+};
