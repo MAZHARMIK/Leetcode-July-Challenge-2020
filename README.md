@@ -23,5 +23,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Prison Cells After N Days</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Prison%20Cells%20After%20N%20Days%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/PinClipart.com_jail-clipart_1274535.png" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Ugly Number II</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Ugly%20Number%20II%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/ugly-number.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
