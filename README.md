@@ -13,7 +13,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 		<tbody>
 			<tr>
 			  <td>Arranging Coins</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Arranging%20Coins%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/coinArrangements.png" width="600" height="250"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Arranging%20Coins%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Icons/Arranging_Coins.png" width="600" height="250"></a></td>
 			</tr>
 			<tr>
 			  <td>Binary Tree Level Order Traversal II</td>
@@ -21,11 +21,15 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Prison Cells After N Days</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Prison%20Cells%20After%20N%20Days%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/PinClipart.com_jail-clipart_1274535.png" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Prison%20Cells%20After%20N%20Days%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Icons/Prison_Cells_After_N_Days.gif" width="400" height="150"></a></td>
 			</tr>
 			<tr>
 			  <td>Ugly Number II</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Ugly%20Number%20II%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/ugly-number.png" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Ugly%20Number%20II%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Icons/Ugly_Number_II.png" width="400" height="150"></a></td>
+			</tr>
+			<tr>
+			  <td>Hamming Distance</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Hamming%20Distance%20(C%2B%2B)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Icons/Hamming_Distance.png" width="400" height="150"></a></td>
 			</tr>
 		</tbody>
 </table>
