@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        bitset<32> b1(x^y);
+        
+        int count = 0;
+        for(int i = 0; i<32; i++){
+            if(b1[i] == 1) //x^y will produce 1 if bits were not same
+                count++;
+        }
+        return count;
+    }
+};
