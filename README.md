@@ -31,5 +31,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Hamming Distance</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Hamming%20Distance%20(c%2B%2B%20simplified)"><img src="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Icons/Hamming_Distance.png" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Plus One</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Plus%20One%20(C%2B%2B)"><img src="http://4.bp.blogspot.com/-DeVxpauPX0U/U636CVJilYI/AAAAAAAAAlU/_kxObPD40DE/s1600/plus1.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
