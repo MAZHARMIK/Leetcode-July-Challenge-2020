@@ -39,5 +39,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Island Perimeter</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Island%20Perimeter%20(C%2B%2B)"><img src="https://www.dogan-ucar.de/wp-content/uploads/2019/01/islands-in-a-2d-array-300x289.png" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>3Sum</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/3Sum%20(C%2B%2B)"><img src="https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/triplet-with-zero-sum-banner-3bfd78ce44788619.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
