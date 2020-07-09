@@ -45,7 +45,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Maximum Width of Binary Tree</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Maximum%20Width%20of%20Binary%20Tree%20(C%2B%2B%20iterative)"><img src="https://www.dotnetlovers.com/images/BottomviewofBinaryTree1223201891215AM.png" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Maximum%20Width%20of%20Binary%20Tree%20(C%2B%2B%20iterative)"><img src="https://www.dotnetlovers.com/images/BottomviewofBinaryTree1223201891215AM.png" width="600" height="250"></a></td>
 			</tr>
 		</tbody>
 </table>
