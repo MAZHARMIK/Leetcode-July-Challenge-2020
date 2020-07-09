@@ -1,0 +1,34 @@
+typedef TreeNode Node;
+class Solution {
+public:
+    int findMaxWidthOfBinaryTree(Node * root) {
+        deque<Node*> deq;
+        deq.push_back(root);
+        int maxW = 0;
+        while(!deq.empty()) {
+            while(!deq.empty() && deq.back() == NULL) deq.pop_back();
+            while(!deq.empty() && deq.front() == NULL) deq.pop_front();
+            int n = deq.size();
+            maxW = max(maxW, n);
+            while(n--) {
+                Node* curr = deq.front();
+                deq.pop_front();
+                if(curr == NULL) {
+                    deq.push_back(NULL);
+                    deq.push_back(NULL);
+                } else {
+                    deq.push_back(curr->left);
+                    deq.push_back(curr->right);
+                }
+            }
+        }
+    return maxW;
+}
+    int widthOfBinaryTree(TreeNode* root) {
+        if(root == NULL)
+            return 0;
+        if(root->left == NULL && root->right == NULL)
+            return 1;
+        return findMaxWidthOfBinaryTree(root);
+    }
+};
