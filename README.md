@@ -43,5 +43,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>3Sum</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/3Sum%20(C%2B%2B)"><img src="https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/triplet-with-zero-sum-banner-3bfd78ce44788619.png" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Maximum Width of Binary Tree</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Maximum%20Width%20of%20Binary%20Tree%20(C%2B%2B%20iterative)"><img src="https://www.dotnetlovers.com/images/BottomviewofBinaryTree1223201891215AM.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
