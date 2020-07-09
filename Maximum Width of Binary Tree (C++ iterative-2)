@@ -1,0 +1,38 @@
+//Using queue
+
+typedef TreeNode Node;
+typedef unsigned long long ull;
+class Solution {
+public:
+    ull findMaxWidthOfBinaryTree(Node * root) {
+        queue<pair<Node*, ull>> que;
+        que.push({root, 1});
+        ull maxW = 0, n, leftMostValue, rightMostValue;
+        Node* curr;
+        while(!que.empty()) {
+            n = que.size();
+            leftMostValue = que.front().second;
+            rightMostValue = que.back().second;
+            maxW = max(rightMostValue-leftMostValue+1, maxW);
+            while(n--) {
+                curr = que.front().first;
+                ull rootVal = que.front().second;
+                que.pop();
+                if(curr->left) {
+                    que.push({curr->left, 2*rootVal});
+                }
+                if(curr->right) {
+                    que.push({curr->right, (2*rootVal)+1});
+                }
+            }
+        }
+        return maxW;
+    }
+    int widthOfBinaryTree(TreeNode* root) {
+        if(root == NULL)
+            return 0;
+        if(root->left == NULL && root->right == NULL)
+            return 1;
+        return findMaxWidthOfBinaryTree(root);
+    }
+};
