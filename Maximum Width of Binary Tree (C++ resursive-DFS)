@@ -1,0 +1,28 @@
+//using DFS (A recursive approach)
+
+typedef TreeNode Node;
+typedef unsigned long long ull;
+class Solution {
+public:
+    int maxWRecur = 0;
+    void recursiveWidth(Node* root, vector<ull>& leftMostNodeLevelWise, ull level, ull index) {
+        if(root == NULL)
+            return;
+        if(level == leftMostNodeLevelWise.size()) { // we keep the left most node's index of every level
+           leftMostNodeLevelWise.push_back(index);
+        }
+        maxWRecur = max(maxWRecur, (int)(index - leftMostNodeLevelWise[level] + 1)); // leftMostNodeLevelWise[level] will give the left most node's index of that level
+        recursiveWidth(root->left, leftMostNodeLevelWise, level + 1, 2*index);
+        recursiveWidth(root->right, leftMostNodeLevelWise, level + 1, 2*index+1);
+    }
+    int widthOfBinaryTree(TreeNode* root) {
+        if(root == NULL)
+            return 0;
+        if(root->left == NULL && root->right == NULL)
+            return 1;
+        maxWRecur = 0;
+        vector<ull> leftMostNodeLevelWise;
+        recursiveWidth(root, leftMostNodeLevelWise, 0, 1);
+        return maxWRecur;
+    }
+};
