@@ -47,5 +47,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Maximum Width of Binary Tree</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Maximum%20Width%20of%20Binary%20Tree%20(C%2B%2B%20iterative-2)"><img src="https://www.dotnetlovers.com/images/BottomviewofBinaryTree1223201891215AM.png" width="600" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Flatten a Multilevel Doubly Linked List</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Flatten%20a%20Multilevel%20Doubly%20Linked%20List%20(C%2B%2B)"><img src="https://i.ytimg.com/vi/EDCiI8AYDEo/maxresdefault.jpg" width="600" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
