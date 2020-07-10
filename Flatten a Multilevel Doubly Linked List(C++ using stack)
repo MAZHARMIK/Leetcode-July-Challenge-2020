@@ -1,3 +1,5 @@
+//using stack
+
 class Solution {
 public:
     Node* flatten(Node* head) {
