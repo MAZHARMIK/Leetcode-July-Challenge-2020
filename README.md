@@ -51,5 +51,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Flatten a Multilevel Doubly Linked List</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Flatten%20a%20Multilevel%20Doubly%20Linked%20List%20(C%2B%2B%20without%20using%20stack)"><img src="https://i.ytimg.com/vi/EDCiI8AYDEo/maxresdefault.jpg" width="600" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Subsets</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Subsets%20(C%2B%2B)"><img src="https://skullsinthestars.files.wordpress.com/2013/12/subsets1.jpg" width="600" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
