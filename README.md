@@ -57,7 +57,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Reverse Bits</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Reverse%20Bits%20(C%2B%2B)"><img src="https://qph.fs.quoracdn.net/main-qimg-61d7f4581428aa1987f880ab3a78cb8e" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Reverse%20Bits%20(C%2B%2B%20:%200ms)"><img src="https://qph.fs.quoracdn.net/main-qimg-61d7f4581428aa1987f880ab3a78cb8e" width="400" height="150"></a></td>
 			</tr>
 		</tbody>
 </table>
