@@ -53,7 +53,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Subsets</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Subsets%20(C%2B%2B)"><img src="https://skullsinthestars.files.wordpress.com/2013/12/subsets1.jpg" width="600" height="250"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Subsets%20(C%2B%2B)"><img src="https://skullsinthestars.files.wordpress.com/2013/12/subsets1.jpg" width="500" height="150"></a></td>
 			</tr>
 			<tr>
 			  <td>Reverse Bits</td>
