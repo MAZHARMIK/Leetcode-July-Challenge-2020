@@ -17,9 +17,6 @@ public:
         double angle_minute_hand = minutes*6;
         
         double result = abs(angle_minute_hand - angle_hour_hand);
-        if(result > 180)
-            return 360-result;
-        return result;
-        
+        return min(result, 360-result);
     }
 };
