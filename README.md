@@ -71,5 +71,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Reverse Words in a String</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Reverse%20Words%20in%20a%20String%20(C%2B%2B%20simplified)"><img src="https://i0.wp.com/www.testnbug.com/wp-content/uploads/2015/08/stringReverse.png?fit=620%2C350" width="300" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Pow(x, n)</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Pow(x%2C%20n)%20(C%2B%2B)"><img src="http://finroo.com/old_designs/designs/413/413_07082009_955.jpg" width="300" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
