@@ -1,0 +1,36 @@
+/*
+  Time  : O(nlogn)
+  Space : O(n)
+*/
+
+class Solution {
+public:
+    static bool myFunction(pair<int,int> p1, pair<int, int>p2) {
+        return p1.second > p2.second;
+    }
+
+    vector<int> topKFrequentFind(vector<int>& nums, int k) {
+        map<int, int> mp;
+        for(int i = 0; i<nums.size(); i++) {
+            if(mp.count(nums[i])) {
+                mp[nums[i]]++;
+            } else
+                mp.insert({nums[i], 1});
+        }
+        vector<pair<int, int>> result(mp.begin(), mp.end());
+        sort(result.begin(), result.end(), myFunction);
+        vector<int> final_result;
+        for(pair<int, int> i:result){
+            k--;
+            final_result.push_back(i.first);
+            if(k == 0)
+                break;
+        }
+        return final_result;
+    }
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        if(k == 0)
+            return {};
+        return topKFrequentFind(nums, k);
+    }
+};
