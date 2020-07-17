@@ -75,5 +75,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Pow(x, n)</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Pow(x%2C%20n)%20(C%2B%2B)"><img src="http://finroo.com/old_designs/designs/413/413_07082009_955.jpg" width="300" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Top K Frequent Elements</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Top%20K%20Frequent%20Elements%20(C%2B%2B%20-%20Naive)"><img src="https://devinspired.files.wordpress.com/2020/02/image-11.png" width="300" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
