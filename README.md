@@ -79,5 +79,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Top K Frequent Elements</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Top%20K%20Frequent%20Elements%20(C++)"><img src="https://devinspired.files.wordpress.com/2020/02/image-11.png" width="300" height="200"></a></td>
 			</tr>
+			<tr>
+			  <td>Course Schedule II</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Course%20Schedule%20II%20(C%2B%2B)"><img src="https://algorithms.tutorialhorizon.com/files/2018/03/Topological-Sort.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
