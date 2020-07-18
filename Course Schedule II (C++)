@@ -1,0 +1,35 @@
+class Solution {
+public:
+    bool check_cycle(int u, stack<int>& s, vector<int>& visited, vector<vector<int>>& my_graph) {
+        visited[u] = 1;
+        for(int v : my_graph[u]) {
+            if(visited[v] == 1) {
+                    return true;
+            }
+            if(visited[v] == 0 && check_cycle(v, s, visited, my_graph)) {
+                return true;
+            }
+        }
+        visited[u] = 2;
+        s.push(u);
+        return false;
+    }
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<vector<int>> my_graph(numCourses);
+        for(vector<int>& courses: prerequisites) {
+            my_graph[courses[1]].push_back(courses[0]);
+        }
+        stack<int> s;
+        vector<int> result;
+        vector<int> visited(numCourses, 0);
+        for(int i = 0; i<numCourses; i++) {
+            if(visited[i] == 0 && check_cycle(i, s, visited, my_graph))
+                return result; //cycle
+        }
+        while(!s.empty()){
+            result.push_back(s.top());
+            s.pop();
+        }
+        return result;
+    }
+};
