@@ -83,5 +83,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Course Schedule II</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Course%20Schedule%20II%20(C%2B%2B)"><img src="https://algorithms.tutorialhorizon.com/files/2018/03/Topological-Sort.png" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Add Binary</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Add%20Binary%20(C%2B%2B)"><img src="https://i.ytimg.com/vi/Z6cSiP93nos/maxresdefault.jpg" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
