@@ -87,5 +87,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Add Binary</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Add%20Binary%20(C%2B%2B)"><img src="https://i.ytimg.com/vi/Z6cSiP93nos/maxresdefault.jpg" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Remove Linked List Elements</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Remove%20Linked%20List%20Elements%20(C%2B%2B)"><img src="https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/Linkedlist.png" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
