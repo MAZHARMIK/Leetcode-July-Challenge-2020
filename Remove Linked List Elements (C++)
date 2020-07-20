@@ -1,0 +1,26 @@
+typedef ListNode Node;
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        if(!head)
+            return NULL;
+        while( head && head->val == val){
+            head = head->next;
+        }
+        Node* prev = NULL;
+        Node* curr = head;
+        
+        while(curr){
+            if(curr->val != val){
+                prev = curr;
+                curr = curr->next;
+            } else{
+                prev->next = curr->next;
+                Node* temp = curr->next;
+                delete(curr);
+                curr = temp;
+            }
+        }
+        return head;
+    }
+};
