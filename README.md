@@ -93,7 +93,7 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			</tr>
 			<tr>
 			  <td>Word Search</td>
-        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Word%20Search%20(C%2B%2B)"><img src="http://nierocks.areavoices.com/files/2012/11/ELECTIONS-WORD-SEARCH.jpg" width="400" height="150"></a></td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Word%20Search%20(C%2B%2B)"><img src="https://i0.wp.com/hallscreekherald.com/wp-content/uploads/2019/01/word-search-1.png?resize=510%2C286&ssl=1" width="400" height="150"></a></td>
 			</tr>
 		</tbody>
 </table>
