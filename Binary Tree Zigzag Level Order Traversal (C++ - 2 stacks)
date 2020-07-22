@@ -1,0 +1,47 @@
+/*
+This approach is using 2-stacks and level order traversal (using queue)
+Space complexity : O(2^h)  in worst case (i.e. Maximum nodes in a level)
+Time complexity  : O (n^2)  (How ?  see below)
+O(2^h *2^h) = O(2^(2h)) = O(2^(2log(n)) = O(2^log(n^2)) = O (n^2)
+*/
+
+typedef TreeNode Node;
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        if(!root)
+            return {};
+        stack<Node*> s1;
+        stack<Node*> s2;
+        s1.push(root);
+        vector<vector<int>> result;
+        
+        while(!s1.empty() || !s2.empty()) {
+            vector<int> temp1;
+            while(!s1.empty()) {
+                Node* curr = s1.top();
+                s1.pop();
+                temp1.push_back(curr->val);
+                if(curr->left)
+                    s2.push(curr->left);
+                if(curr->right)
+                    s2.push(curr->right);
+            }
+            if(temp1.size() != 0)
+                result.push_back(temp1);
+            vector<int> temp2;
+            while(!s2.empty()) {
+                Node* curr = s2.top();
+                s2.pop();
+                temp2.push_back(curr->val);
+                if(curr->right)
+                    s1.push(curr->right);
+                if(curr->left)
+                    s1.push(curr->left);
+            }
+            if(temp2.size() != 0)
+                result.push_back(temp2);
+        }
+        return result;
+    }
+};
