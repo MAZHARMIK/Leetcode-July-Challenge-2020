@@ -95,5 +95,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Word Search</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Word%20Search%20(C%2B%2B)"><img src="https://i0.wp.com/hallscreekherald.com/wp-content/uploads/2019/01/word-search-1.png?resize=510%2C286&ssl=1" width="400" height="150"></a></td>
 			</tr>
+			<tr>
+			  <td>Binary Tree Zigzag Level Order Traversal</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Binary%20Tree%20Zigzag%20Level%20Order%20Traversal%20(C%2B%2B%20-%20Level%20Order)"><img src="https://1.bp.blogspot.com/-A-t_ZfYazzM/VjRrZiy6HKI/AAAAAAAAJTQ/3A1mkniv9PY/s1600/111.PNG" width="400" height="150"></a></td>
+			</tr>
 		</tbody>
 </table>
