@@ -1,0 +1,40 @@
+/*
+This approach is using level order traversal and level order traversal (using queue)
+Space complexity : O(2^h)  in worst case (i.e. Maximum nodes in a level will be populated in queue at a time)
+Time complexity  : O (n^2)
+*/
+
+typedef TreeNode Node;
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        if(!root)
+            return {};
+        
+        queue<Node*> que;
+        que.push(root);
+        vector<vector<int>> result;
+        bool rightToLeft = true;
+        while(!que.empty()) {
+            rightToLeft = !rightToLeft;
+            vector<int> temp;
+            int n = que.size();
+            while(n--) {
+                Node* curr = que.front();
+                que.pop();
+                if(rightToLeft) {
+                    temp.insert(temp.begin(), curr->val);
+                } else {
+                    temp.push_back(curr->val);
+                }
+                
+                if(curr->left)
+                    que.push(curr->left);
+                if(curr->right)
+                    que.push(curr->right);
+            }
+            result.push_back(temp);
+        }
+        return result;
+    }
+};
