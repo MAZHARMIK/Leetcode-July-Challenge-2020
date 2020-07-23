@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums) {
+        int xor_result = 0;
+        for(int i : nums)
+            xor_result ^= i;
+        
+        int mask = (xor_result)&(-xor_result);
+        
+        int b1 = 0, b2 = 0;
+        for(int i:nums) {
+            if((mask&i) == 0) {
+                b1 ^= i;
+            }
+            else {
+                b2 ^= i;
+            }
+        }
+        return {b1,b2};
+    }
+};
