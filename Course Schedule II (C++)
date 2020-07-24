@@ -1,35 +1,48 @@
 class Solution {
 public:
-    bool check_cycle(int u, stack<int>& s, vector<int>& visited, vector<vector<int>>& my_graph) {
-        visited[u] = 1;
-        for(int v : my_graph[u]) {
-            if(visited[v] == 1) {
-                    return true;
-            }
-            if(visited[v] == 0 && check_cycle(v, s, visited, my_graph)) {
-                return true;
+    vector<int> topologicalSortBFS(map<int, vector<int>>& adj, int V, vector<int>& indegree) {
+        vector<bool> visited(V, 0);
+        queue<int> que;
+        for(int i = 0; i<V; i++) {
+            if(indegree[i] == 0) {
+                que.push(i);
+                visited[i] = true;
             }
         }
-        visited[u] = 2;
-        s.push(u);
-        return false;
+        
+        int count = 0;
+        vector<int> result;
+        while(!que.empty()) {
+            int curr = que.front();
+            que.pop();
+            count++;
+            
+            for(auto x:adj[curr]) {
+                if(visited[x] == false)
+                    indegree[x]--;
+                if(indegree[x] == 0) {
+                    que.push(x);
+                    visited[x] = true;
+                }
+            }
+            
+            result.push_back(curr);
+        }
+        if(count != V)
+            return {};
+        
+        return result;
     }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<vector<int>> my_graph(numCourses);
-        for(vector<int>& courses: prerequisites) {
-            my_graph[courses[1]].push_back(courses[0]);
+        map<int, vector<int>> adj;
+        vector<int> indegree(numCourses, 0);
+        for(auto vec:prerequisites) {
+            int x = vec[0];
+            int y = vec[1];
+            adj[y].push_back(x);
+            indegree[x]++;
         }
-        stack<int> s;
-        vector<int> result;
-        vector<int> visited(numCourses, 0);
-        for(int i = 0; i<numCourses; i++) {
-            if(visited[i] == 0 && check_cycle(i, s, visited, my_graph))
-                return result; //cycle
-        }
-        while(!s.empty()){
-            result.push_back(s.top());
-            s.pop();
-        }
-        return result;
+        
+        return topologicalSortBFS(adj, numCourses, indegree);
     }
 };
