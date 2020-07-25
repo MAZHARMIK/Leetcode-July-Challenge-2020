@@ -1,37 +1,25 @@
 class Solution {
 public:
-    int target;
-    void DFS_UTIL(map<int, vector<int>>& adj, int start, vector<vector<int>>& result, vector<int> temp) {
+    void DFS(vector<vector<int>>& adj, int start, vector<int>& temp,  vector<vector<int>>& result) {
         
         temp.push_back(start);
-        if(start == target) {
+        if(start == adj.size()-1) {
             result.push_back(temp);
         } else {
             for(auto x:adj[start]) {
-                DFS_UTIL(adj, x, result, temp);
+                DFS(adj, x, temp, result);
             }
         }
         temp.pop_back();
     }
     
-    void DFS(map<int, vector<int>>& adj, int V, vector<vector<int>>& result) {        
-        vector<int> temp;
-        DFS_UTIL(adj, 0, result, temp);
-    }
-    
-    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        int V = graph.size();
-        map<int, vector<int>> adj;
-        
-        for(int i = 0 ; i<V; i++) {
-            for(int j = 0; j<graph[i].size(); j++) {
-                adj[i].push_back(graph[i][j]);
-            }
-        }
-        
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& adj) {        
         vector<vector<int>> result;
-        target = V-1;
-        DFS(adj, V, result);
+        for(int x : adj[0]) {
+            vector<int> temp;
+            temp.push_back(0);
+            DFS(adj, x, temp, result);
+        }
         return result;
     }
 };
