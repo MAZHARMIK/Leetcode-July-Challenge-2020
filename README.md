@@ -107,5 +107,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>All Paths From Source to Target</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/All%20Paths%20From%20Source%20to%20Target%20(C%2B%2B)"><img src="https://www.cdn.geeksforgeeks.org/wp-content/uploads/allPaths.png" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Find Minimum in Rotated Sorted Array II</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II"><img src="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/Figures/153/153_Minimum_Rotated_Sorted_Array_2.png" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
