@@ -1,0 +1,37 @@
+class Solution {
+public:
+    int target;
+    void DFS_UTIL(map<int, vector<int>>& adj, int start, vector<vector<int>>& result, vector<int> temp) {
+        
+        temp.push_back(start);
+        if(start == target) {
+            result.push_back(temp);
+        } else {
+            for(auto x:adj[start]) {
+                DFS_UTIL(adj, x, result, temp);
+            }
+        }
+        temp.pop_back();
+    }
+    
+    void DFS(map<int, vector<int>>& adj, int V, vector<vector<int>>& result) {        
+        vector<int> temp;
+        DFS_UTIL(adj, 0, result, temp);
+    }
+    
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
+        int V = graph.size();
+        map<int, vector<int>> adj;
+        
+        for(int i = 0 ; i<V; i++) {
+            for(int j = 0; j<graph[i].size(); j++) {
+                adj[i].push_back(graph[i][j]);
+            }
+        }
+        
+        vector<vector<int>> result;
+        target = V-1;
+        DFS(adj, V, result);
+        return result;
+    }
+};
