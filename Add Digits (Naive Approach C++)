@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int getSumOfDigits(int num, bool getSum = true) {
+        int sum = 0;
+        int l = 0;
+        while(num) {
+            sum += num%10;
+            num = num/10;
+            l++;
+        }
+        if(getSum)
+            return sum;
+        return l;
+    }
+    int addDigits(int num) {
+        if(num == 0)
+            return 0;
+        while(getSumOfDigits(num, false) != 1) {
+            num = getSumOfDigits(num);
+        }
+        return num;
+    }
+};
