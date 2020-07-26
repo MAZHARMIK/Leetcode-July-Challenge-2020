@@ -111,5 +111,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Find Minimum in Rotated Sorted Array II</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Find%20Minimum%20in%20Rotated%20Sorted%20Array%20II"><img src="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/Figures/153/153_Minimum_Rotated_Sorted_Array_2.png" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Add Digits</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Add%20Digits%20(Naive%20Approach%20C%2B%2B)"><img src="https://miro.medium.com/max/776/1*v9qkF3eqvftZY-G96dW3Mw.png" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
