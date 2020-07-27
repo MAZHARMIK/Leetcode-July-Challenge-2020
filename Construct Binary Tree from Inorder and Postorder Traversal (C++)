@@ -6,8 +6,7 @@ public:
 
         TreeNode* root = new TreeNode(postorder[preIndex]);
         preIndex--;
-        if(start == end)
-            return root;
+        
         int root_candidate = root->val;
         int i = start;
         for(; i<=end; i++) {
