@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //using Kahn's Algorithm (TopoSort using BFS)
     vector<int> topologicalSortBFS(map<int, vector<int>>& adj, int V, vector<int>& indegree) {
         vector<bool> visited(V, 0);
         queue<int> que;
