@@ -1,0 +1,26 @@
+class Solution {
+public:
+    int leastInterval(vector<char>& tasks, int n) {
+        //make a frequency map first
+        vector<int> count(26, 0);
+        for(char ch: tasks)
+            count[ch - 'A']++;
+        
+        sort(count.begin(), count.end());
+        
+        int maxFreq = count[25]-1;
+        int maxIdle = (maxFreq)*n; //Because, idle spaces will lie in between of max freq char before its last appearance
+        //For example : "A","A","A","B","B","B"
+        // "A" _ _ "A" _ _ "A"
+        //Four idle spaces above (After last "A", we don't care), we can put tasks in whatever order after that
+        
+        for(int i = 24; i>=0; i--) {
+            maxIdle = maxIdle - min(count[i], maxFreq); //because idle spaces will be in between max freq chars only
+        }
+        
+        if(maxIdle > 0)
+            return maxIdle+tasks.size();
+        
+        return tasks.size();
+    }
+};
