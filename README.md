@@ -119,5 +119,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Construct Binary Tree from Inorder and Postorder Traversal</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Construct%20Binary%20Tree%20from%20Inorder%20and%20Postorder%20Traversal%20(C%2B%2B)"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/1200px-Binary_tree.svg.png" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Task Scheduler</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Task%20Scheduler%20(C%2B%2B)"><img src="https://s3.amazonaws.com/s3-blogs.mentor.com/colinwalls/files/2018/05/RR.png" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
