@@ -123,5 +123,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Task Scheduler</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Task%20Scheduler%20(C%2B%2B)"><img src="https://s3.amazonaws.com/s3-blogs.mentor.com/colinwalls/files/2018/05/RR.png" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Best Time to Buy and Sell Stock with Cooldown</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Cooldown%20(C%2B%2B)"><img src="https://thumbs.dreamstime.com/z/buy-sell-investors-22038723.jpg" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
