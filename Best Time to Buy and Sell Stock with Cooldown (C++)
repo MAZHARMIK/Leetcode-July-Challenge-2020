@@ -1,0 +1,28 @@
+class Solution {
+public:
+    int maxP(vector<int>& prices, int i, bool buy, map<string, int>& mp) {
+        string key = to_string(i) + "_" + to_string(buy);
+        if(mp.count(key))
+            return mp[key];
+        
+        if(i >= prices.size())
+            return 0;
+        
+        int profit = 0;
+        if(buy) {
+            int buys  = maxP(prices, i+1, false, mp) - prices[i];
+            int nobuy = maxP(prices, i+1, true, mp);
+            profit    = max(buys, nobuy);
+        } else {
+            int sells  = maxP(prices, i+2, true, mp) + prices[i];
+            int nosell = maxP(prices, i+1, false, mp);
+            profit     = max(sells, nosell);
+        }
+        return mp[key] = profit;
+    }
+    int maxProfit(vector<int>& prices) {
+        map<string, int> mp;
+        
+        return maxP(prices, 0, true, mp);
+    }
+};
