@@ -127,5 +127,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Best Time to Buy and Sell Stock with Cooldown</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Best%20Time%20to%20Buy%20and%20Sell%20Stock%20with%20Cooldown%20(C%2B%2B)"><img src="https://thumbs.dreamstime.com/z/buy-sell-investors-22038723.jpg" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Word Break II</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Word%20Break%20II%20(C%2B%2B)"><img src="https://4.bp.blogspot.com/-w1lqC2agnZ4/VbWFpwH1H0I/AAAAAAAAACg/HiioXvm7f2s/s1600/leet.png" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
