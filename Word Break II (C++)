@@ -1,0 +1,36 @@
+class Solution {
+public:
+    vector<string> solve(string s, int start, set<string>& st, map<int, vector<string>>& mp) {
+        if(mp.count(start))
+            return mp[start];
+        
+        vector<string> result;
+        
+        if(start == s.length())
+            result.push_back("");
+        
+        for(int end = start+1; end<=s.length(); end++) {
+            string prefix = s.substr(start, end-start);
+            if(st.count(prefix)) {
+                vector<string> remaining = solve(s, end, st, mp);
+                
+                for(string remain:remaining) {
+                    string temp = prefix;
+                    if(remain == "")
+                        temp += "";
+                    else
+                        temp += " ";
+                    temp += remain;
+                    result.push_back(temp);
+                }
+            }
+        }
+        return mp[start] = result;
+    }
+    vector<string> wordBreak(string s, vector<string>& wordDict) {
+        set<string> st(wordDict.begin(), wordDict.end());
+        map<int, vector<string>> mp;
+        
+        return solve(s, 0, st, mp);
+    }
+};
