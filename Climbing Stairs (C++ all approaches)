@@ -7,8 +7,8 @@ public:
         if(curr == n)
             return 1;
         
-        int one = climb(curr+1, n, t);
-        int two = climb(curr+2, n, t);
+        int one = climb(curr+1, n);
+        int two = climb(curr+2, n);
         
         return (one+two);
     }
