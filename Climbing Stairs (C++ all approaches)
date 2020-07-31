@@ -1,0 +1,55 @@
+class Solution {
+public:
+    int climbRecursive(int curr, int n) {
+        if(curr > n)
+            return 0;
+            
+        if(curr == n)
+            return 1;
+        
+        int one = climb(curr+1, n, t);
+        int two = climb(curr+2, n, t);
+        
+        return (one+two);
+    }
+    
+    int climbMemoized(int curr, int n, vector<int>& t) {
+        if(curr > n)
+            return 0;
+        
+        if(t[curr] != -1)
+            return t[curr];
+        
+        if(curr == n)
+            return t[curr] = 1;
+        
+        int one = climb(curr+1, n, t);
+        int two = climb(curr+2, n, t);
+        
+        return t[curr] = (one+two);
+    }
+    
+     int climbDP(int n) {
+        vector<int> t(n+1, 0);
+        //t[i] = # of ways to reach ith stair
+        t[0] = 0;
+        t[1] = 1;
+        t[2] = 2;
+        
+        for(int i = 3; i<n+1; i++) {
+            //I can be at ith stair from either (i-1)th stair or (i-2)th stair
+            t[i] = t[i-1] + t[i-2]; //adding # of ways to reach ith stair
+        }
+        
+        return t[n]; //returning # of ways to reach nth stair
+    }
+    
+    int climbStairs(int n) {
+        if(n == 1)
+            return 1;
+        vector<int> t(46, -1);
+        //return climbRecursive(0, n);  (TLE on leetcode for n >= 43)
+        //return climbMemoized(0, n, t);  (Accepted)
+        return climbDP(n); //Accepted
+    }
+};
