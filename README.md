@@ -131,5 +131,9 @@ Link to the contest : <a href="https://leetcode.com/explore/featured/card/july-l
 			  <td>Word Break II</td>
         <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Word%20Break%20II%20(C%2B%2B)"><img src="https://4.bp.blogspot.com/-w1lqC2agnZ4/VbWFpwH1H0I/AAAAAAAAACg/HiioXvm7f2s/s1600/leet.png" width="400" height="250"></a></td>
 			</tr>
+			<tr>
+			  <td>Climbing Stairs</td>
+        <td><a href="https://github.com/MAZHARMIK/Leetcode-July-Challenge-2020/blob/master/Climbing%20Stairs%20(C%2B%2B%20all%20approaches)"><img src="https://static.vecteezy.com/system/resources/previews/000/625/464/original/vector-man-climbing-the-stairs-business-development-and-career-growth-concept.jpg" width="400" height="250"></a></td>
+			</tr>
 		</tbody>
 </table>
