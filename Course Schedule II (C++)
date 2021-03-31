@@ -35,7 +35,7 @@ public:
         return result;
     }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        map<int, vector<int>> adj;
+        unordered_map<int, vector<int>> adj;
         vector<int> indegree(numCourses, 0);
         for(auto vec:prerequisites) {
             int x = vec[0];
